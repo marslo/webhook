@@ -5,7 +5,7 @@ node( 'built-in' ) {
         // credentialsId: 'GITHUB_SSH_CREDENTIAL_MARSLO',
         // url: 'https://github.com/marslo/webhook.git'
 
-    checkout scmGit
+    checkout scmGit(
                branches: [[ name: '*/main' ]],
                browser: github( 'https://github.com/marslo/webhook' ),
                extensions: [],
