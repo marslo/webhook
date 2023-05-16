@@ -9,6 +9,6 @@ node( 'built-in' ) {
                branches: [[ name: '*/main' ]],
                browser: github( 'https://github.com/marslo/webhook' ),
                extensions: [],
-               userRemoteConfigs: [[ credentialsId: 'GITHUB_SSH_CREDENTIAL_MARSLO', url: 'https://github.com/marslo/webhook.git' ]]
+               userRemoteConfigs: [[ credentialsId: 'GITHUB_SSH_CREDENTIAL_MARSLO', url: 'git@github.com:marslo/webhook.git' ]]
              )
 }
